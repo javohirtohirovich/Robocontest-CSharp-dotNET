@@ -1,4 +1,4 @@
-﻿namespace Problme_1054;
+﻿namespace Problem_1054;
 
 internal class Program
 {
