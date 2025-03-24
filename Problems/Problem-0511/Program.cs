@@ -4,15 +4,17 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        var num = Console.ReadLine();
-        var sum = 0;
-        foreach (var digit in num)
+        string a = Console.ReadLine();
+        long n = long.Parse(a);
+        if (n >= -9)
         {
-            if (char.IsDigit(digit))
-            {
-                sum += digit - '0';
-            }
+            Console.WriteLine(n);
         }
-        Console.WriteLine(sum);
+        else
+        {
+            long v = long.Parse(a.Substring(0, 2));
+            long g = long.Parse(a.Substring(2));
+            Console.WriteLine(v + g);
+        }
     }
 }
